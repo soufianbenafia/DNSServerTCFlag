@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91dc6eef-a44a-462e-ae29-88d75fdf222c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/DNS-Server.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dnsjava_dnsjava_3_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DNS-Server.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DNS_Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hosts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/hosts.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DNS_Server.java" beforeDir="false" />
-    </list>
+    <list default="true" id="91dc6eef-a44a-462e-ae29-88d75fdf222c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,6 +41,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -103,7 +90,7 @@
       <workItem from="1638229405637" duration="72000" />
       <workItem from="1638229567566" duration="4286000" />
       <workItem from="1638632435512" duration="2022000" />
-      <workItem from="1638846173080" duration="2126000" />
+      <workItem from="1638846173080" duration="2430000" />
     </task>
     <servers />
   </component>
