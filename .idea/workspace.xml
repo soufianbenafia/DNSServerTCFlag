@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91dc6eef-a44a-462e-ae29-88d75fdf222c" name="Default Changelist" comment="" />
+    <list default="true" id="91dc6eef-a44a-462e-ae29-88d75fdf222c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/truncatedDNSServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DNS_Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DNS_Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DNS-Server-1.0-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/DNS-Server-1.0-SNAPSHOT-jar-with-dependencies.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DNS-Server-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/DNS-Server-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DNS_Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DNS_Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +22,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -90,7 +99,14 @@
       <workItem from="1638229405637" duration="72000" />
       <workItem from="1638229567566" duration="4286000" />
       <workItem from="1638632435512" duration="2022000" />
-      <workItem from="1638846173080" duration="2430000" />
+      <workItem from="1638846173080" duration="3507000" />
+      <workItem from="1638850565946" duration="84000" />
+      <workItem from="1638924476304" duration="1229000" />
+      <workItem from="1639436511345" duration="766000" />
+      <workItem from="1639603162703" duration="1315000" />
+      <workItem from="1639953323045" duration="613000" />
+      <workItem from="1639955817646" duration="34000" />
+      <workItem from="1640134419506" duration="2794000" />
     </task>
     <servers />
   </component>
@@ -150,16 +166,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/DNS_Server.java</url>
-          <line>67</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
