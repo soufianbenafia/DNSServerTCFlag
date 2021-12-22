@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91dc6eef-a44a-462e-ae29-88d75fdf222c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/truncatedDNSServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mainDNSServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DNS_Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DNS_Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DNS-Server-1.0-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/DNS-Server-1.0-SNAPSHOT-jar-with-dependencies.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DNS-Server-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/DNS-Server-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DNS_Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DNS_Server.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/truncatedDNSServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/truncatedDNSServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -57,7 +54,7 @@
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.mainDNSServer">
     <configuration name="DNS_Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DNS_Server" />
       <module name="DNS-Server" />
@@ -65,19 +62,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration name="mainDNSServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mainDNSServer" />
+      <module name="DNS-Server" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.mainDNSServer" />
         <item itemvalue="Application.DNS_Server" />
       </list>
     </recent_temporary>
@@ -106,7 +113,8 @@
       <workItem from="1639603162703" duration="1315000" />
       <workItem from="1639953323045" duration="613000" />
       <workItem from="1639955817646" duration="34000" />
-      <workItem from="1640134419506" duration="2794000" />
+      <workItem from="1640134419506" duration="3239000" />
+      <workItem from="1640138651736" duration="959000" />
     </task>
     <servers />
   </component>

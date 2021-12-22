@@ -1,62 +1,24 @@
 import org.xbill.DNS.*;
 
 import java.io.IOException;
-import java.net.InetSocketAddress;
 import java.net.SocketAddress;
 import java.nio.ByteBuffer;
-import java.nio.channels.*;
-import java.util.Iterator;
-import java.util.Set;
+import java.nio.channels.DatagramChannel;
+import java.nio.channels.ServerSocketChannel;
+import java.nio.channels.SocketChannel;
 
 public class DNS_Server implements truncatedDNSServer {
 
-    DatagramChannel udpServer = DatagramChannel.open();
+    DatagramChannel udpServer;
 
-    ServerSocketChannel tcpserver = ServerSocketChannel.open();
+    ServerSocketChannel tcpServer;
 
-    ByteBuffer receiveBuffer = ByteBuffer.allocate(512);
+    ByteBuffer receiveBuffer;
 
-    public DNS_Server() throws IOException {
-    }
-
-    public void main(String[] args) throws IOException {
-        int port_number;
-        if (args.length == 0) {
-            System.out.println("-----------------------------");
-            System.out.println("Usage: java DNS_Server <port>");
-            System.out.println("Default port: 53");
-            System.out.println("-----------------------------\n");
-            port_number = 53;
-        } else {
-            port_number = Integer.parseInt(args[0]);
-        }
-
-        System.out.println("DNS Server is running at port " + port_number + "...");
-        InetSocketAddress address = new InetSocketAddress("141.22.213.55", port_number);
-        tcpserver.socket().bind(address);
-        udpServer.socket().bind(address);
-        tcpserver.configureBlocking(false);
-        udpServer.configureBlocking(false);
-        Selector selector = Selector.open();
-        tcpserver.register(selector, 16);
-        udpServer.register(selector, 1);
-
-        for (; ; ) {
-            receiveBuffer.clear();
-            selector.select();
-            Set keys = selector.selectedKeys();
-
-            for (Iterator i = keys.iterator(); i.hasNext(); ) {
-                SelectionKey key = (SelectionKey) i.next();
-                i.remove();
-                Channel c = key.channel();
-                if (key.isAcceptable() && c == tcpserver) {
-                    receiveDNSTruncatedFlag();
-                } else if (key.isReadable() && c == udpServer) {
-                    receiveDNSRequest();
-                }
-            }
-        }
+    DNS_Server() throws IOException {
+        udpServer = DatagramChannel.open();
+        tcpServer = ServerSocketChannel.open();
+        receiveBuffer = ByteBuffer.allocate(512);
     }
 
     @Override
@@ -89,9 +51,24 @@ public class DNS_Server implements truncatedDNSServer {
 
     @Override
     public void receiveDNSTruncatedFlag() throws IOException {
-        SocketChannel client = tcpserver.accept();
+        SocketChannel client = tcpServer.accept();
         if (client != null) {
             client.close();
         }
+    }
+
+    @Override
+    public DatagramChannel getUdpServer() {
+        return udpServer;
+    }
+
+    @Override
+    public ServerSocketChannel getTcpServer() {
+        return tcpServer;
+    }
+
+    @Override
+    public ByteBuffer getReceiveBuffer() {
+        return receiveBuffer;
     }
 }
